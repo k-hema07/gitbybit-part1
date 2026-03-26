@@ -1,0 +1,10 @@
+function factorial($n) {
+    if ($n == 0) {
+        return 1;
+    }
+
+    $result = $n * factorial($n - 1);
+    echo "factorial($n) = $result\n";
+
+    return $result;
+}
