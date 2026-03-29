@@ -1,0 +1,17 @@
+<?php
+function printPattern($n, $current = 1) {
+    if ($current > $n) {
+        return;
+    }
+
+    for ($i = 0; $i < $current; $i++) {
+        echo $current + $i;
+    }
+    
+    echo "\n";
+
+    printPattern($n, $current + 1);
+}
+
+printPattern(3);
+?>
